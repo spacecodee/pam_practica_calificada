@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".SearchFragment">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".SearchFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+    <Switch
+            android:text="Click aquí"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/swClick"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="52dp"
+            android:layout_marginStart="28dp"
+            android:minHeight="48dp"/>
 
-</FrameLayout>
+    <ImageView
+            android:src="@drawable/joker_96"
+            android:layout_width="159dp"
+            android:layout_height="234dp"
+            android:id="@+id/imgVJocker"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="156dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="256dp"
+            android:layout_height="39dp"
+            android:id="@+id/progressBar2"
+            app:layout_constraintTop_toBottomOf="@+id/imgVJocker"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="64dp"
+            app:layout_constraintHorizontal_bias="0.498"
+            android:progressTint="#10CF1A"
+            android:indeterminate="true"
+            android:indeterminateTint="#08F3BC"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
