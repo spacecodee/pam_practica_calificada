@@ -23,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
         this.txtUser = this.findViewById(R.id.txtUsername);
         this.txtPassword = this.findViewById(R.id.txtPassword);
         this.userDto = Utils.getUserDto(this.getIntent().getExtras());
+        //
     }
 
     public void login(View view) {
