@@ -1,5 +1,6 @@
 package com.spacecodee.app.sesion01.ejercicio.controller;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.spacecodee.app.sesion01.ejercicio.R;
+import com.spacecodee.app.sesion01.ejercicio.dto.UserDto;
 import org.jetbrains.annotations.NotNull;
 
 public class HomeFragment extends Fragment {
@@ -18,6 +20,9 @@ public class HomeFragment extends Fragment {
     private EditText txtNumber1;
     private EditText txtNumber2;
     private Button btnCalc;
+    private TextView lblWelcome;
+
+    UserDto userDto;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,14 +42,17 @@ public class HomeFragment extends Fragment {
         this.txtNumber1 = this.requireView().findViewById(R.id.txtNumber1);
         this.txtNumber2 = this.requireView().findViewById(R.id.txtNumber2);
         this.btnCalc = this.requireView().findViewById(R.id.btnCalc);
+        this.lblWelcome = this.requireView().findViewById(R.id.lblWelcome);
 
+        this.userDto = ((MainActivity) this.requireActivity()).getUserDto();
+
+        this.setWelcome();
         this.setComboItems();
         this.setListenerCombo();
         this.calcularAction();
     }
 
     private void setComboItems() {
-        ///set items spinner
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this.getContext(),
                                                                android.R.layout.simple_spinner_item,
                                                                HomeFragment.COMBO_ITEMS);
@@ -101,5 +109,10 @@ public class HomeFragment extends Fragment {
 
     private String roundTotal(double total) {
         return String.valueOf(Math.round(total * 100.0) / 100.0);
+    }
+
+    @SuppressLint("SetTextI18n")
+    private void setWelcome() {
+        this.lblWelcome.setText("Bienvenido " + this.userDto.getName() + " " + this.userDto.getLastName());
     }
 }

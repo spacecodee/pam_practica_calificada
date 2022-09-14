@@ -3,6 +3,12 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="com.spacecodee.app.sesion01.ejercicio">
 
+    <uses-permission
+            android:name="android.permission.INTERNET"
+            tools:ignore="ManifestOrder"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
     <application
             android:allowBackup="true"
             android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +19,12 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.Sesion01Ejercicio"
             tools:targetApi="31">
+        <activity
+                android:name=".controller.SignUpActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".controller.MainActivity"
+                android:exported="false"/>
         <activity
                 android:name=".controller.SplashScreenActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
@@ -26,7 +38,7 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".controller.MainActivity"
+                android:name=".controller.LoginActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -36,9 +48,4 @@
         </activity>
     </application>
 
-    <uses-permission
-            android:name="android.permission.INTERNET"
-            tools:ignore="ManifestOrder"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 </manifest>

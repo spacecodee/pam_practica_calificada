@@ -1,7 +1,0 @@
-
-l
-java:S1450"VRemove the "binding" field and declare it as a local variable in the relevant methods.(ÎªûÍ
-t
-java:S1450"WRemove the "mVisible" field and declare it as a local variable in the relevant methods.(©œ€ñ8×½òš²0
-I
-java:S1068",Remove this unused "mVisible" private field.(©œ€ñ8ñ½òš²0

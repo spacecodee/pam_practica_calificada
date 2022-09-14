@@ -8,10 +8,15 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.spacecodee.app.sesion01.ejercicio.R;
+import com.spacecodee.app.sesion01.ejercicio.dto.UserDto;
+import com.spacecodee.app.sesion01.ejercicio.utils.Utils;
+import lombok.Getter;
 
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
+    @Getter
+    private UserDto userDto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         this.bottomNavigationView = findViewById(R.id.bottomNavigationView);
         this.fragmentReplace(new HomeFragment());
         this.bottomNViewItemListener();
+
+        this.userDto = Utils.getUserDto(this.getIntent().getExtras());
     }
 
     @SuppressLint("NonConstantResourceId") private void bottomNViewItemListener() {
