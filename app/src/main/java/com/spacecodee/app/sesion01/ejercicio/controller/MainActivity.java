@@ -1,13 +1,13 @@
-package com.spacecodee.app.sesion01.ejercicio;
+package com.spacecodee.app.sesion01.ejercicio.controller;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.spacecodee.app.sesion01.ejercicio.R;
 
 public class MainActivity extends AppCompatActivity {
 

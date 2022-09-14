@@ -1,4 +1,4 @@
-package com.spacecodee.app.sesion01.ejercicio;
+package com.spacecodee.app.sesion01.ejercicio.controller;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;

@@ -1,17 +1,15 @@
-package com.spacecodee.app.sesion01.ejercicio;
+package com.spacecodee.app.sesion01.ejercicio.controller;
 
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.MediaController;
 import android.widget.SeekBar;
-import android.widget.VideoView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import com.spacecodee.app.sesion01.ejercicio.R;
 import org.jetbrains.annotations.NotNull;
 
 public class UserFragment extends Fragment {

@@ -1,4 +1,4 @@
-package com.spacecodee.app.sesion01.ejercicio;
+package com.spacecodee.app.sesion01.ejercicio.controller;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +8,7 @@ import android.widget.*;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import com.spacecodee.app.sesion01.ejercicio.R;
 import org.jetbrains.annotations.NotNull;
 
 public class HomeFragment extends Fragment {
