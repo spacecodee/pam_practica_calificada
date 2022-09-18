@@ -10,7 +10,5 @@ P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 y
 Iapp/src/main/java/com/spacecodee/app/sesion01/ejercicio/UserFragment.java,f\5\f5c9cc3de76835822566a7aba61c9668e12c878d
-y
-Iapp/src/main/java/com/spacecodee/app/sesion01/ejercicio/HomeFragment.java,0\1\015190d93a59aafccfdc915d419dfa20ce7bcf30
 }
 Mapp/src/main/java/com/spacecodee/app/sesion01/ejercicio/SettingsFragment.java,e\c\ecb2ed67770424ab2d5db2a3452d22ab22341a91
