@@ -46,7 +46,9 @@ public class HomeFragment extends Fragment {
 
         this.userDto = ((MainActivity) this.requireActivity()).getUserDto();
 
-        this.setWelcome();
+        if (this.userDto != null) {
+            this.setWelcome();
+        }
         this.setComboItems();
         this.setListenerCombo();
         this.calcularAction();
